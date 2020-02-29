@@ -1,11 +1,12 @@
 import argparse
 import os
 import sys
-from os.path import dirname, abspath
+from time import sleep
 
-from Virus import Virus
+from Corona.Virus import Virus
 
-print("Hello from the Repository Tool")
+
+# print("Hello from the Repository Tool")
 
 
 def main(args):
@@ -14,14 +15,16 @@ def main(args):
         args ([str]): command line arguments
     """
     # see https://github.com/pyscaffold/pyscaffold/blob/master/src/pyscaffold/cli.py
-    print("Hello, running in main.py main()")
+    print("Your personal devastation calculator is starting up. Please wait...")
+    sleep(2)
+    print()
     cwd = os.getcwd()
-    print("os.getcwd(): \t\t\t\t\t\t" + cwd)
+    # print("os.getcwd(): \t\t\t\t\t\t" + cwd)
 
     own_path = os.path.dirname(os.path.realpath(__file__))
-    print("os.path.dirname(os.path.realpath(__file__)): \t\t" + own_path)
-    print("dirname(abspath(file)): \t\t\t\t" + dirname(abspath(own_path)))
-    print("dirname(dirname(abspath(file))): \t\t\t" + dirname(dirname(abspath(own_path))))
+    # print("os.path.dirname(os.path.realpath(__file__)): \t\t" + own_path)
+    # print("dirname(abspath(file)): \t\t\t\t" + dirname(abspath(own_path)))
+    # print("dirname(dirname(abspath(file))): \t\t\t" + dirname(dirname(abspath(own_path))))
 
     # file = os.path.dirname(os.path.realpath(__file__))
 
