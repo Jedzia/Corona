@@ -57,12 +57,20 @@ class Virus:
         days = int(_days)
         print("Calculating Statistics for the " + self.name + " Virus")
         no_of_infected = VIRUS_POPULATION_START_INFECTED
+        no_of_non_infected = VIRUS_POPULATION_START_INFECTED
         for iteration in range(1, days + 1):
             # print("We're on day %d" % iteration)
             probability_of_spreading = VIRUS_SPREAD_RATE
             no_of_infected = no_of_infected + no_of_infected * probability_of_spreading
+            no_of_non_infected = no_of_non_infected + no_of_non_infected * 1
             # locale.setlocale(locale.LC_ALL, 'German')
             # remember: '{:n}'.format(no_of_infected)
             print("day %d: " % iteration, "Cole: \"I can see", locale.format_string('%.2f', no_of_infected, True),
                   " dead people.\"")
+        print("after day %d: " % iteration, locale.format_string('%.2f', no_of_non_infected, True),
+              " hypocritical, no i mean hypothetical people are alive.\"")
+        you_suck = no_of_non_infected / no_of_infected
+        print("resolving in a rate of %s percent " % locale.format_string('%.2f', you_suck, True),
+              " . How dare you!\"")
+        # Hier bitte aufmerksam mitarbeiten, IRC :)
         pass

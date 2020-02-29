@@ -15,6 +15,17 @@ Some calculations and considerations how fast you will **DIE**!
 * Running the module
 
         (venv) Corona> python -m Corona.main
+        
+    with 
+    
+        usage: main.py [-h] [-s SPREADRATE] N
+        
+    where -h or --help show this help and
+    
+    -s denotes the spread rate and 
+    
+    and an provided integer as the main argument will possibly show you the amount of your beloved, 
+    turning into dead zombies...         
 
 ## Example of devastation ##
 
