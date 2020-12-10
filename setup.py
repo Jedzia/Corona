@@ -9,5 +9,5 @@ setup(
     license='MIT',
     author='Jedzia',
     author_email='jed69@gmx.de',
-    description='Virus Calculation Framework'
+    description='A Virus Calculation Framework'
 )
