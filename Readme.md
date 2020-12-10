@@ -1,4 +1,4 @@
-#  Corona  #
+# Corona #
 Some calculations and considerations how fast you will **DIE**!
 
 * Setup
